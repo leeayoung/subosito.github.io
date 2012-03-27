@@ -668,10 +668,6 @@ body:after {
   src: local("Lato Light"), local("Lato-Light"), url("http://themes.googleusercontent.com/static/fonts/lato/v6/KT3KS9Aol4WfR6Vas8kNcg.woff") format("woff");
 }
 
-.clear {
-  clear: both;
-}
-
 .current {
   font-weight: bold;
 }
@@ -725,6 +721,15 @@ body {
 }
 #container #content h1 a, #container #content h2 a {
   text-decoration: none;
+}
+#container #footer {
+  display: inline;
+  float: left;
+  width: 620px;
+  margin: 0 10px;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
 }
 #container #sidebar {
   display: inline;

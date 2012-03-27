@@ -20,10 +20,6 @@ $default-box-shadow-color: #bbb;
 
 }
 
-.clear {
-  clear: both;
-}
-
 .current {
   font-weight: bold;
 }
@@ -75,6 +71,13 @@ body {
     }
   }
 
+  #footer {
+    @include column(8);
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+  }
+
   #sidebar {
     @include column(3);
     @include single-box-shadow;
@@ -109,5 +112,6 @@ body {
       }
     }
   }
+
 }
 

@@ -11,8 +11,12 @@
   <body>
     <div id="container">
       <div id="content">{{ content }}</div>
+      <section id="footer">
+        <a rel="author" href="{{ site.accounts.google }}">{{ site.author }}</a>'s Blog (2012)
+      </section>
       {% include sidebar.html %}
     </div>
+    <div class="clear">&nbsp;</div>
   </body>
   {% include getclicky.html %}
 </html>
