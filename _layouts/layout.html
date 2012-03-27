@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="/css/style.css" media="all" type="text/css">
   </head>
   <body>
-    <a href="{{ site.accounts.github }}"><img id="fork" src="/img/fork.png" alt="Fork me on GitHub" /></a>
     <div id="container">
+      <div id="content">{{ content }}</div>
       <section id="sidebar">
-        <img src="/img/avatar.jpg" alt="subosito avatar">
-        <ul>
+        <a class="ribbon" href="{{ site.accounts.github }}"><img src="/img/fork.png" alt="Fork me on GitHub" /></a>
+        <img class="avatar" src="/img/avatar.png" alt="subosito avatar">
+        <ul class="nav">
           <li><a href="/">Home</a></li>
           <li><a href="{{ site.accounts.twitter }}" rel="me" target="_blank">Twitter</a></li>
           <li><a href="{{ site.accounts.github }}" rel="me" target="_blank">Github</a></li>
@@ -21,7 +22,6 @@
           <li><a href="/about">About</a></li>
         </ul>
       </section>
-      <div id="content">{{ content }}</div>
     </div>
   </body>
 </html>

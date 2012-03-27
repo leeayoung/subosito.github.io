@@ -2,4 +2,16 @@
 title: Alif Rachmawadi
 layout: layout
 ---
-<h1><a href="http://twitter.com/subosito">@subosito</a></h1>
+
+<h2>Recent Posts</h2>
+<ul class="posts">
+  {% for post in site.posts limit:10 %}
+  <li>
+    <section class="post-title">
+      <a href="{{ post.url }}">{{ post.title}}</a>
+      <em class="small">{{ post.date | date_to_string }}</em>
+    </section>
+  </li>
+  {% endfor %}
+</ul>
+

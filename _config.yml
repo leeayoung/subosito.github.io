@@ -3,12 +3,15 @@ paginate: 5
 permalink: /:year/:month/:title/
 markdown: rdiscount
 pygments: true
-title: subosito
+title: Alif Rachmawadi
 url: http://subosito.com/
 feed: http://feeds.feedburner.com/subosito
+author: Alif Rachmawadi
+email: subosito@gmail.com
 accounts:
   twitter: https://twitter.com/#!/subosito
   github: https://github.com/subosito
+  pinboard: https://pinboard.in/u:subosito/
   delicious: http://delicious.com/subosito
   stackoverflow: http://stackoverflow.com/users/94947/subosito
   google: https://plus.google.com/107350708236214972935

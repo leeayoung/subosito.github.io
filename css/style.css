@@ -659,21 +659,8 @@ body:after {
   clear: both;
 }
 
-/*grid */
-@font-face {
-  font-family: "Molengo";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Molengo"), url("http://themes.googleusercontent.com/font?kit=z1JWuCBrQt_Ta83eqIo6Dg") format("woff");
-}
-
-@font-face {
-  font-family: "Cantarell";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Cantarell Regular"), local("Cantarell-Regular"), url("http://themes.googleusercontent.com/font?kit=V86VyqXbc09Sss3BPsMj1z8E0i7KZn-EPnyo3HZu7kw") format("woff");
-}
-
+/* grid */
+/* themes */
 @font-face {
   font-family: 'Lato';
   font-style: normal;
@@ -693,6 +680,10 @@ body:after {
   float: right;
 }
 
+.small {
+  font-size: smaller;
+}
+
 ::selection {
   background: #ffffcc;
 }
@@ -702,40 +693,69 @@ body:after {
 }
 
 h1, h2, h3 {
-  font-family: Molengo, Cantarell, Helvetica, sans-serif;
-}
-
-#fork {
-  position: absolute;
-  top: 0;
-  left: 0;
-  border: 0;
+  font-family: Lato, Helvetica, sans-serif;
 }
 
 body {
-  background-color: white;
-  font-family: Molengo, Cantarell, Helvetica, sans-serif;
+  background: #f5f5f5 url("/img/pattern.png") repeat;
+  font-family: Lato, Helvetica, sans-serif;
 }
 
 #container {
   width: 960px;
-  background-color: #eeeeee;
+  margin: 20px auto;
+  background-color: #fff;
 }
-
-#sidebar {
+#container #content {
+  display: inline;
+  float: left;
+  width: 620px;
+  margin: 0 10px;
+  -moz-box-shadow: 0px 0px 5px #bbbbbb;
+  -webkit-box-shadow: 0px 0px 5px #bbbbbb;
+  -o-box-shadow: 0px 0px 5px #bbbbbb;
+  box-shadow: 0px 0px 5px #bbbbbb;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+}
+#container #content h2 {
+  text-align: center;
+}
+#container #sidebar {
   display: inline;
   float: left;
   width: 220px;
   margin: 0 10px;
-  margin: 0 8px 0 0;
-  overflow: hidden;
-  border-right: solid 2px #dddddd;
+  -moz-box-shadow: 0px 0px 5px #bbbbbb;
+  -webkit-box-shadow: 0px 0px 5px #bbbbbb;
+  -o-box-shadow: 0px 0px 5px #bbbbbb;
+  box-shadow: 0px 0px 5px #bbbbbb;
+  position: fixed;
+  background-color: #fff;
+  border-radius: 4px;
 }
-
-#content {
-  display: inline;
-  float: left;
-  width: 700px;
-  margin: 0 10px;
-  background-color: white;
+#container #sidebar .avatar {
+  display: block;
+  margin: 20px auto 10px auto;
+  border: solid 4px #ebebeb;
+}
+#container #sidebar .ribbon {
+  opacity: 0.9;
+  padding-left: 72px;
+  position: absolute;
+  top: 0px;
+}
+#container #sidebar ul.nav {
+  list-style: none;
+  margin: 0px;
+  padding: 0px 0px;
+  padding-bottom: 20px;
+}
+#container #sidebar ul.nav li {
+  text-align: center;
+  line-height: 2;
+  text-transform: uppercase;
+  font-size: smaller;
 }
