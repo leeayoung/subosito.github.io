@@ -9,16 +9,15 @@ Hi.. my name Alif Rachmawadi. I am a web developer. I love to build web applicat
 
 You can contact me using:
 <ul>
-  <li>Twitter: <a href="{{ site.account.twitter }}" target="_blank" rel="me">@subosito</a></li>
-  <li>Google Plus: <a href="{{ site.account.googleplus }}" rel="me" target="_blank">+++++</a></li>
-  <li>Email: <a href="mailto:subosito@gmail.com">subosito@gmail.com</a></li>
+  <li>Twitter: <a href="{{ site.account.twitter }}" target="_blank" rel="me">@{{ site.username }}</a></li>
+  <li>Email: <a href="mailto:subosito@gmail.com">{{ site.email }}</a></li>
   <li>Phone: +62.82134132451</li>
 </ul>
 
 You can also find me elsewhere:
 <ul>
   <li><a href="{{ site.account.github }}">Github</a></li>
+  <li><a href="{{ site.account.google }}" rel="me" target="_blank">Google Plus</li>
   <li><a href="{{ site.account.stackoverflow }}">StackOverflow</a></li>
-  <li><a href="{{ site.account.googlereader }}">Google Reader</a></li>
   <li><a href="{{ site.account.pinboard }}">Pinboard</a></li>
 </ul>

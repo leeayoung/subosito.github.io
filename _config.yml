@@ -6,9 +6,9 @@ pygments: true
 title: subosito
 url: http://subosito.com/
 feed: http://feeds.feedburner.com/subosito
-author: Alif Rachmawadi
 email: subosito@gmail.com
-nick: subosito
+author: Alif Rachmawadi
+username: subosito
 accounts:
   twitter: https://twitter.com/#!/subosito
   github: https://github.com/subosito
