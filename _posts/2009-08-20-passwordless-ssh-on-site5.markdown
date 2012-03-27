@@ -1,10 +1,8 @@
 ---
 title: Passwordless SSH on Site5
-layout: layout
+layout: post
 category: recipes
 ---
-
-## Passwordless SSH on Site5
 
 ![OpenSSH](/img/logo/openssh.gif)
 

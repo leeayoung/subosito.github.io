@@ -720,8 +720,11 @@ body {
   padding: 10px 30px;
   margin-bottom: 20px;
 }
-#container #content h2 {
+#container #content h1, #container #content h2 {
   text-align: center;
+}
+#container #content h1 a, #container #content h2 a {
+  text-decoration: none;
 }
 #container #sidebar {
   display: inline;

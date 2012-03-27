@@ -1,10 +1,8 @@
 ---
 title: From Wordpress to Jekyll
-layout: layout
+layout: post
 category: ruby
 ---
-
-## From Wordpress to Jekyll
 
 _Hello?! Are you kidding to me? What's wrong with [Wordpress](http://www.wordpress.org/) ? Why did you need to migrate from Wordpress to ehm,, what do you said before, [Jekyll](http://github.com/mojombo/jekyll) ? what kind of animal is it?_
 
