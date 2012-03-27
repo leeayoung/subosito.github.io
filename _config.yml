@@ -4,7 +4,7 @@ permalink: /:year/:month/:title/
 markdown: rdiscount
 pygments: true
 title: subosito
-url: http://subosito.com/
+url: http://subosito.com
 feed: http://feeds.feedburner.com/subosito
 email: subosito@gmail.com
 author: Alif Rachmawadi
