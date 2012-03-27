@@ -1,0 +1,87 @@
+@import "normalize";
+@import "railscasts";
+@import "grid";
+@import "compass/utilities";
+@import "compass/css3";
+
+/*grid */
+$columns: 12;
+$column-width: 60;
+$gutter-width: 20;
+
+@font-face {
+  font-family: "Molengo";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Molengo"), url("http://themes.googleusercontent.com/font?kit=z1JWuCBrQt_Ta83eqIo6Dg") format("woff");
+}
+
+
+@font-face {
+  font-family: "Cantarell";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cantarell Regular"), local("Cantarell-Regular"), url("http://themes.googleusercontent.com/font?kit=V86VyqXbc09Sss3BPsMj1z8E0i7KZn-EPnyo3HZu7kw") format("woff");
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Lato Light"), local("Lato-Light"), url('http://themes.googleusercontent.com/static/fonts/lato/v6/KT3KS9Aol4WfR6Vas8kNcg.woff') format('woff');
+
+}
+
+.clear {
+  clear: both;
+}
+
+.current {
+  font-weight: bold;
+}
+
+.right {
+  float: right;
+}
+
+::selection {
+  background: #ffffcc;
+}
+
+::-moz-selection {
+  background: #ffffcc;
+}
+
+h1, h2, h3 {
+  font-family: Molengo, Cantarell, Helvetica, sans-serif;
+}
+
+#fork {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+}
+
+body {
+  background-color: white;
+  font-family: Molengo, Cantarell, Helvetica, sans-serif;
+}
+
+#container {
+  width: 960px;
+  background-color: #eeeeee;
+}
+
+#sidebar {
+  @include column(3);
+  margin: 0 8px 0 0;
+  overflow: hidden;
+  border-right: solid 2px #dddddd;
+}
+
+#content {
+  @include column(9);
+  background-color: white;
+
+}

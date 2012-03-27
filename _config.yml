@@ -1,0 +1,21 @@
+lsi: false
+paginate: 5
+permalink: /:year/:month/:title/
+markdown: rdiscount
+pygments: true
+title: subosito
+url: http://subosito.com/
+feed: http://feeds.feedburner.com/subosito
+accounts:
+  twitter: https://twitter.com/#!/subosito
+  github: https://github.com/subosito
+  delicious: http://delicious.com/subosito
+  stackoverflow: http://stackoverflow.com/users/94947/subosito
+  google: https://plus.google.com/107350708236214972935
+  facebook: https://www.facebook.com/subosito
+  openid: https://subosito.myopenid.com
+exclude:
+  - .gitignore
+  - README.md
+  - Gemfile
+  - Gemfile.lock

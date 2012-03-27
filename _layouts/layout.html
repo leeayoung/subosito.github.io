@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="openid.server" href="http://www.myopenid.com/server">
+    <link rel="openid.delegate" href="{{ site.accountss.openid }}">
+    <link rel="alternate" type="application/atom+xml" href="{{ site.feed }}">
+    <link rel="stylesheet" href="/css/style.css" media="all" type="text/css">
+  </head>
+  <body>
+    <a href="{{ site.accounts.github }}"><img id="fork" src="/img/fork.png" alt="Fork me on GitHub" /></a>
+    <div id="container">
+      <section id="sidebar">
+        <img src="/img/avatar.jpg" alt="subosito avatar">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="{{ site.accounts.twitter }}" rel="me" target="_blank">Twitter</a></li>
+          <li><a href="{{ site.accounts.github }}" rel="me" target="_blank">Github</a></li>
+          <li><a href="{{ site.accounts.google }}" rel="me" target="_blank">Google Plus</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </section>
+      <div id="content">{{ content }}</div>
+    </div>
+  </body>
+</html>
