@@ -74,6 +74,33 @@ a {
         text-decoration: none;
       }
     }
+
+    img {
+
+      &.left {
+        float: left;
+        margin-right: 20px;
+      }
+
+      &.right {
+        margin-left: 20px;
+      }
+
+      &.center {
+        display: block;
+        margin: 0px auto;
+        text-align: center;
+      }
+
+    }
+
+    hr.separator {
+      margin: 20px auto;
+      width: 80%;
+      border: 0;
+      border-top: solid 1px #ccc;
+      display: block;
+    }
   }
 
   #sidebar {
@@ -139,13 +166,11 @@ a {
     }
 
     #license {
-      @include column(3);
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
 
       a {
-        position: fixed;
-        bottom: 0;
-        margin-left: 65px;
-
         img {
           opacity: 0.2;
         }

@@ -4,7 +4,7 @@ layout: post
 category: recipes
 ---
 
-![OpenSSH](/img/logo/openssh.gif)
+<img src="/img/logo/openssh.gif" class="center" alt="OpenSSH">
 
 Connecting to remote computer via <a href="http://en.wikipedia.org/wiki/Secure_Shell" target="_blank">SSH protocol</a> will always be fun. Above all, it's secure. SSH connection usually run on port 22 and use combination of username and password to connect on remote host. Because everything is encrypted, the connection is a little bit slower than other protocols. That's ok, since the connection more secure ;).
 

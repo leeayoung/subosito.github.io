@@ -738,6 +738,25 @@ a:active {
 #container #content h1 a, #container #content h2 a {
   text-decoration: none;
 }
+#container #content img.left {
+  float: left;
+  margin-right: 20px;
+}
+#container #content img.right {
+  margin-left: 20px;
+}
+#container #content img.center {
+  display: block;
+  margin: 0px auto;
+  text-align: center;
+}
+#container #content hr.separator {
+  margin: 20px auto;
+  width: 80%;
+  border: 0;
+  border-top: solid 1px #ccc;
+  display: block;
+}
 #container #sidebar {
   display: inline;
   float: left;
@@ -804,15 +823,9 @@ a:active {
   padding: 10px;
 }
 #container #sidebar #license {
-  display: inline;
-  float: left;
-  width: 220px;
-  margin: 0 10px;
-}
-#container #sidebar #license a {
   position: fixed;
-  bottom: 0;
-  margin-left: 65px;
+  bottom: 20px;
+  left: 20px;
 }
 #container #sidebar #license a img {
   opacity: 0.2;

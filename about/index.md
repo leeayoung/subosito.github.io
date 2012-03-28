@@ -14,10 +14,3 @@ You can contact me using:
   <li>Phone: +62.82134132451</li>
 </ul>
 
-You can also find me elsewhere:
-<ul>
-  <li><a href="{{ site.account.github }}">Github</a></li>
-  <li><a href="{{ site.account.google }}" rel="me" target="_blank">Google Plus</li>
-  <li><a href="{{ site.account.stackoverflow }}">StackOverflow</a></li>
-  <li><a href="{{ site.account.pinboard }}">Pinboard</a></li>
-</ul>
