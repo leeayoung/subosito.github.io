@@ -8,7 +8,7 @@ category: recipes
 
 Connecting to remote computer via <a href="http://en.wikipedia.org/wiki/Secure_Shell" target="_blank">SSH protocol</a> will always be fun. Above all, it's secure. SSH connection usually run on port 22 and use combination of username and password to connect on remote host. Because everything is encrypted, the connection is a little bit slower than other protocols. That's ok, since the connection more secure ;).
 
-Recently, I moved my hosting to <a href="{{ site.affiliate.site5 }}" target="_blank">Site5</a>. <a href="http://www.site5.com/hosting/" target="_blank">Site5's hosting features</a> that offer SSH access drive me faster to buy it. After enabled it on Cpanel, then I have a SSH connection parameters on my hands. Just issue this command to connect:
+Recently, I moved my hosting to <a href="{{ site.affiliates.site5 }}" target="_blank">Site5</a>. <a href="http://www.site5.com/hosting/" target="_blank">Site5's hosting features</a> that offer SSH access drive me faster to buy it. After enabled it on Cpanel, then I have a SSH connection parameters on my hands. Just issue this command to connect:
 
 {% highlight bash %}
 :~ % ssh username@remotehost

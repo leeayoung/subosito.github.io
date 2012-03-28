@@ -1,11 +1,23 @@
 <section id="sidebar">
-  <a class="ribbon" href="{{ site.accounts.github }}"><img src="/img/fork.png" alt="Fork me on GitHub" /></a>
-  <img class="avatar" src="/img/avatar.png" alt="subosito avatar">
-  <ul class="nav">
-    <li><a href="/">Home</a></li>
-    <li><a href="{{ site.accounts.twitter }}" rel="me" target="_blank">Twitter</a></li>
-    <li><a href="{{ site.accounts.github }}" rel="me" target="_blank">Github</a></li>
-    <li><a href="{{ site.accounts.google }}" rel="me" target="_blank">Google Plus</a></li>
-    <li><a href="/about">About</a></li>
-  </ul>
+
+  <section id="identity">
+    <a class="ribbon" href="{{ site.accounts.github }}"><img src="/img/fork.png" alt="Fork me on GitHub" /></a>
+    <img class="avatar" src="/img/avatar.png" alt="subosito avatar">
+    <div class="author"><a rel="author" href="{{ site.accounts.google }}">{{ site.author }}</a></div>
+    <ul class="nav">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="{{ site.accounts.pinboard }}">Links</a></li>
+    </ul>
+  </section>
+
+  <section id="attributes">
+    <a href="{{ site.accounts.twitter }}" title="Twitter"><img src="/img/icons/twitter.png" alt="Twitter"></a>
+    <a href="{{ site.accounts.google }}" title="Google+"><img src="/img/icons/googleplus.png" alt="Google+"></a>
+    <a href="{{ site.accounts.github }}" title="Github"><img src="/img/icons/github.png" alt="Github"></a>
+  </section>
+
+  <section id="license">
+    <a rel="license" href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons Attribution 3.0 License"><img src="/img/icons/cc.png" alt="License"></a>
+  </section>
 </section>

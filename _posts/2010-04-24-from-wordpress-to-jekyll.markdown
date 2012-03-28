@@ -87,9 +87,9 @@ exclude: # exclude some files from being copied into _site
   - README.textile
 
 # miscellaneous configuration
-title: "alifity"
-url: "http://alifity.com"
-feed: "http://feeds.feedburner.com/alifity/rss"
+title: "subosito"
+url: "http://subosito.com"
+feed: "http://feeds.feedburner.com/subosito/rss"
 license:
   type: "Creative Commons Attribution 3.0 License"
   url: "http://creativecommons.org/licenses/by/3.0/"
@@ -195,7 +195,7 @@ All static pages generated, now let's copy it to the server, and show the world.
 rsync -avz /path/to/_site username@remotehost:path/to/blog
 {% endhighlight %}
 
-*Congratulations, migration Completed*. Your site now live!. In the next few days, I will cover some tips and trick to make jekyll based pages more powerfull. For now you can take a look [source codes of this site](http://github.com/alifity/alifity.github.com) on the Github to get full overview about Jekyll usage for this blog.
+*Congratulations, migration Completed*. Your site now live!. In the next few days, I will cover some tips and trick to make jekyll based pages more powerfull. For now you can take a look [source codes of this site](http://github.com/subosito/subosito.github.com) on the Github to get full overview about Jekyll usage for this blog.
 
 If you have any questions or suggestions, don't be hesitate to put it on comment form below. *See ya! :D*
 

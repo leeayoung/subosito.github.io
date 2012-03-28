@@ -18,6 +18,8 @@ accounts:
   google: https://plus.google.com/107350708236214972935
   facebook: https://www.facebook.com/subosito
   openid: https://subosito.myopenid.com
+affiliates:
+  site5: http://www.site5.com/in.php?id=105763
 exclude:
   - .gitignore
   - README.md
