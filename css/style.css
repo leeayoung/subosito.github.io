@@ -825,7 +825,7 @@ a:active {
 #container #sidebar #license {
   position: fixed;
   bottom: 20px;
-  left: 20px;
+  margin-left: 140px;
 }
 #container #sidebar #license a img {
   opacity: 0.2;

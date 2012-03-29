@@ -4,11 +4,11 @@ layout: post
 category: ssh
 ---
 
-<img src="/img/ssh-its-free.jpg" alt="ssh" class="right">
+<img src="/img/ssh.png" alt="ssh" class="right">
 
 When managing server, SSH is the most important aspect. It's a door for in and out administrator. Making sure that SSH is secure is always comes into my mind when I first setup VPS. Setting it up first makes me confident that I am the only one who can manage the server.
 
-By default, SSH installation is allow anyone to connect on post 22, using registered user and password. It's secure enough, but we can increase its security signicantly by tuning up SSH daemon configuration. Curius how to do that? Let's get our hand dirty :D
+By default, SSH installation is allow anyone to connect on post 22, using registered user and password. It's secure enough, but we can increase its security signicantly by tuning up SSH daemon configuration. Curious how to do that? Let's get our hand dirty :D
 
 Basically, SSH daemon configuration located on `/etc/ssh/sshd_config`, Let's take a look line by line changes:
 
