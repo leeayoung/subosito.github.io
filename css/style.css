@@ -713,6 +713,11 @@ a:active {
   color: #ff2b2b;
 }
 
+pre {
+  white-space: pre;
+  word-wrap: break-word;
+}
+
 #container {
   width: 960px;
   margin: 20px auto;

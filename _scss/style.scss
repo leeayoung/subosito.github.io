@@ -18,7 +18,6 @@ $default-box-shadow-color: #bbb;
   font-style: normal;
   font-weight: 300;
   src: local("Lato Light"), local("Lato-Light"), url('http://themes.googleusercontent.com/static/fonts/lato/v6/KT3KS9Aol4WfR6Vas8kNcg.woff') format('woff');
-
 }
 
 .current {
@@ -52,6 +51,11 @@ body {
 
 a {
   @include link-colors(#D92525, #FF8000, #FF2B2B, #280606, #280606);
+}
+
+pre {
+  white-space: pre;
+  word-wrap: break-word;
 }
 
 #container {
