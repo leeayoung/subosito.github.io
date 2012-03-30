@@ -16,12 +16,16 @@ On [Ruby on Rails](http://rubyonrails.org), you have some inflector methods dire
 > 10.ordinalize # "10th"
 {% endhighlight %}
 
+<img src="/img/logo/symfony.png" alt="Symfony 2" class="right">
+
 On [Symfony 2](http://symfony.com), to behave like that is a little bit tricky, we need to create custom class and add it as DIC so we can use it everywhere on our application.
 
-`src/Mini/Bundle/CoreBundle/DependencyInjection/CoreExtension.php`
+`CoreExtension.php`
 
 {% highlight php %}
 <?php
+
+// src/Mini/Bundle/CoreBundle/DependencyInjection/CoreExtension.php
 
 namespace Mini\Bundle\CoreBundle\DependencyInjection;
 
@@ -42,17 +46,22 @@ class CoreExtension extends Extension
 }
 {% endhighlight %}
 
-`src/Mini/Bundle/CoreBundle/Resources/config/util.yml`
+`util.yml`
+
 {% highlight yaml %}
+# src/Mini/Bundle/CoreBundle/Resources/config/util.yml
+
 services:
   mini.util.inflector:
     class: Mini\Bundle\CoreBundle\Util\Inflector
 {% endhighlight %}
 
-`src/Mini/Bundle/CoreBundle/Util/Inflector.php`
+`Inflector.php`
 
 {% highlight php %}
 <?php
+
+// src/Mini/Bundle/CoreBundle/Util/Inflector.php
 
 namespace Mini\Bundle\CoreBundle\Util;
 
@@ -391,6 +400,7 @@ Now we can access it using `mini.util.inflector`
 
 {% highlight php %}
 <?php
+
 $inflector = $this->get('mini.util.inflector');
 $inflector->pluralize('person'); # people
 $inflector->singularize('shoes'); # shoe
