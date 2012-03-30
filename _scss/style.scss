@@ -20,6 +20,10 @@ $default-box-shadow-color: #bbb;
   src: local("Lato Light"), local("Lato-Light"), url('http://themes.googleusercontent.com/static/fonts/lato/v6/KT3KS9Aol4WfR6Vas8kNcg.woff') format('woff');
 }
 
+@mixin background {
+  background: #DFE1E3 url('/img/pattern.png') repeat;
+}
+
 .current {
   font-weight: bold;
 }
@@ -40,12 +44,22 @@ $default-box-shadow-color: #bbb;
   background: #ffffcc;
 }
 
+::-webkit-scrollbar {
+  @include background;
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+
 h1, h2, h3 {
   font-family: Lato, Helvetica, sans-serif;
 }
 
 body {
-  background: #DFE1E3 url('/img/pattern.png') repeat;
+  @include background;
   font-family: Lato, Helvetica, sans-serif;
 }
 

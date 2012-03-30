@@ -688,6 +688,16 @@ body:after {
   background: #ffffcc;
 }
 
+::-webkit-scrollbar {
+  background: #dfe1e3 url("/img/pattern.png") repeat;
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+
 h1, h2, h3 {
   font-family: Lato, Helvetica, sans-serif;
 }
