@@ -715,6 +715,7 @@ a:active {
 
 pre {
   white-space: pre;
+  word-wrap: normal;
 }
 
 #container {
