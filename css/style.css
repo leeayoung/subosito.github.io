@@ -659,13 +659,11 @@ body:after {
   color: #a5c261;
 }
 
-/* grid */
-/* themes */
 @font-face {
-  font-family: 'Lato';
+  font-family: 'Imprima';
   font-style: normal;
-  font-weight: 300;
-  src: local("Lato Light"), local("Lato-Light"), url("http://themes.googleusercontent.com/static/fonts/lato/v6/KT3KS9Aol4WfR6Vas8kNcg.woff") format("woff");
+  font-weight: 400;
+  src: local("Imprima"), local("Imprima-Regular"), url("http://themes.googleusercontent.com/static/fonts/imprima/v1/Lw4J4XiH21tNmX0DzARuSA.woff") format("woff");
 }
 
 .current {
@@ -699,12 +697,12 @@ body:after {
 }
 
 h1, h2, h3 {
-  font-family: Lato, Helvetica, sans-serif;
+  font-family: Imprima, Helvetica, sans-serif;
 }
 
 body {
   background: #dfe1e3 url("/img/pattern.png") repeat;
-  font-family: Lato, Helvetica, sans-serif;
+  font-family: Imprima, Helvetica, sans-serif;
 }
 
 a {
