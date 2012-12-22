@@ -1,21 +1,12 @@
-@import "compass/utilities";
-@import "compass/css3";
-
 @import "_normalize";
-@import "_grid";
 @import "_railscasts";
+@import "bourbon/bourbon";
 
-$columns: 12;
-$column-width: 60;
-$gutter-width: 20;
-$default-box-shadow-color: #bbb;
+$gw-column: 60px;
+$gw-gutter: 20px;
+$initial-size: 16px;
 
-@font-face {
-  font-family: 'Imprima';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Imprima'), local('Imprima-Regular'), url('http://themes.googleusercontent.com/static/fonts/imprima/v1/Lw4J4XiH21tNmX0DzARuSA.woff') format('woff');
-}
+@include font-face('Source Sans Pro', '/fonts/source-sans-pro');
 
 @mixin background {
   background: #DFE1E3 url('/img/pattern.png') repeat;
@@ -51,17 +42,39 @@ $default-box-shadow-color: #bbb;
   background: #ccc;
 }
 
-h1, h2, h3 {
-  font-family: Imprima, Helvetica, sans-serif;
+h1 {
+  font-size: floor(golden-ratio($initial-size, 2));
+}
+
+h1, h2, h3, h4, h5 {
+  color: #222;
 }
 
 body {
+  font-family: "Source Sans Pro", $helvetica;
+  font-size: golden-ratio($initial-size, 0);
+  color: #444;
   @include background;
-  font-family: Imprima, Helvetica, sans-serif;
 }
 
 a {
-  @include link-colors(#D92525, #FF8000, #FF2B2B, #280606, #280606);
+  color: #D92525;
+
+  &:hover {
+    color: #FF8000;
+  }
+
+  &:active {
+    color: #FF2B2B;
+  }
+
+  &:visited {
+    color: #280606;
+  }
+
+  &:focus {
+    color: #280606;
+  }
 }
 
 pre {
@@ -69,22 +82,26 @@ pre {
   word-wrap: normal;
 }
 
+pre, code, kbd, samp {
+  font-family: $monospace;
+  font-size: 14px;
+}
+
 #container {
-  width: 960px;
+  width: grid-width(12);
   margin: 20px auto;
   background-color: #fff;
 
   #content {
-    @include column(8);
-    @include single-box-shadow;
+    width: grid-width(8);
+    margin-left: $gw-gutter;
+    float: right;
     background-color: #fff;
-    border-radius: 4px;
-    padding: 10px 30px;
+    padding-left: 30px;
+    padding-right: 30px;
     margin-bottom: 20px;
 
     h1, h2 {
-      text-align: center;
-
       a {
         text-decoration: none;
       }
@@ -119,14 +136,13 @@ pre {
   }
 
   #sidebar {
-    @include column(3);
-    position: fixed;
+    width: grid-width(3);
+    margin-left: $gw-gutter;
+    background-color: #fff;
+    float: left;
 
     #identity {
-      @include column(3);
-      @include single-box-shadow;
       background-color: #fff;
-      border-radius: 4px;
 
       .avatar {
         display: block;
@@ -138,7 +154,7 @@ pre {
         opacity: 0.9;
         padding-left: 72px;
         position: absolute;
-        top: 0px;
+        top: 18px;
       }
 
       .author {
@@ -170,7 +186,7 @@ pre {
     }
 
     #attributes {
-      @include column(3);
+      width: grid-width(3);
       margin-top: 20px;
       padding-bottom: 20px;
       text-align: center;
