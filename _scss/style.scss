@@ -1,215 +1,152 @@
-@import "_normalize";
-@import "_railscasts";
-@import "bourbon/bourbon";
+@charset "utf-8";
 
-$gw-column: 60px;
-$gw-gutter: 20px;
-$initial-size: 16px;
+@import "normalize";
+@import "recipes";
+@import "_github";
+@import "susy";
 
-@include font-face('Source Sans Pro', '/fonts/source-sans-pro');
+// fonts
+@include icon-font-face-fontawesome;
+@include google-webfont('Source Sans Pro', '400');
+@include google-webfont('PT Sans', '400');
+@include google-webfont('Lato', '400');
 
-@mixin background {
-  background: #DFE1E3 url('/img/pattern.png') repeat;
+// colors
+$background-color: #fff;
+$selection-color: #ffffcc;
+$text-color: #333;
+$font-family: 'PT Sans', 'Helvetica Neue', HelveticaNeue, Helvetica, sans-serif;
+$header-font-family: 'Source Sans Pro', $font-family;
+$source-font-family: Inconsolata, Monospace, "Courier New";
+
+// susy
+$total-columns: 8;
+
+// links
+@import "compass/typography/links/link-colors";
+
+// typography
+@import "compass/typography";
+//$base-font-size: 18px;
+//$base-line-height: 30px;
+@include establish-baseline;
+
+.icon {
+    @include icon-font($font: 'fontawesome');
+    font-size: 6em;
 }
 
 .current {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .right {
-  float: right;
+    float: right;
 }
 
 .small {
-  font-size: smaller;
+    font-size: smaller;
 }
 
+// TODO: prefix-less
 ::selection {
-  background: #ffffcc;
+    background: $selection-color;
 }
 
 ::-moz-selection {
-  background: #ffffcc;
+    background: $selection-color;
 }
 
 ::-webkit-scrollbar {
-  @include background;
-  width: 10px;
-  height: 10px;
+    width: 10px;
+    height: 10px;
+    background: $background-color;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ccc;
-}
-
-h1 {
-  font-size: floor(golden-ratio($initial-size, 2));
-}
-
-h1, h2, h3, h4, h5 {
-  color: #222;
+    background: #ccc;
 }
 
 body {
-  font-family: "Source Sans Pro", $helvetica;
-  font-size: golden-ratio($initial-size, 0);
-  color: #444;
-  @include background;
+    color: $text-color;
+    background: #fff;
+    font-family: $font-family;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $header-font-family;
 }
 
 a {
-  color: #D92525;
-
-  &:hover {
-    color: #FF8000;
-  }
-
-  &:active {
-    color: #FF2B2B;
-  }
-
-  &:visited {
-    color: #280606;
-  }
-
-  &:focus {
-    color: #280606;
-  }
+    @include link-colors(#D92525, #FF8000, #FF2B2B, #280606, #280606);
 }
 
 pre {
-  white-space: pre;
-  word-wrap: normal;
+    white-space: pre;
+    word-wrap: normal;
 }
 
-pre, code, kbd, samp {
-  font-family: $monospace;
-  font-size: 14px;
+code {
+    font-family: $source-font-family;
+    font-size: 16px;
 }
 
-#container {
-  width: grid-width(12);
-  margin: 20px auto;
-  background-color: #fff;
+#wrapper {
 
-  #content {
-    width: grid-width(8);
-    margin-left: $gw-gutter;
-    float: right;
-    background-color: #fff;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-bottom: 20px;
-
-    h1, h2 {
-      a {
-        text-decoration: none;
-      }
-    }
-
-    img {
-
-      &.left {
-        float: left;
-        margin-right: 20px;
-      }
-
-      &.right {
-        margin-left: 20px;
-      }
-
-      &.center {
-        display: block;
-        margin: 0px auto;
-        text-align: center;
-      }
-
-    }
-
-    hr.separator {
-      margin: 20px auto;
-      width: 80%;
-      border: 0;
-      border-top: solid 1px #ccc;
-      display: block;
-    }
-  }
-
-  #sidebar {
-    width: grid-width(3);
-    margin-left: $gw-gutter;
-    background-color: #fff;
-    float: left;
+    @include container;
 
     #identity {
-      background-color: #fff;
-
-      .avatar {
-        display: block;
-        margin: 20px auto 10px auto;
-        border: solid 4px #ebebeb;
-      }
-
-      .ribbon {
-        opacity: 0.9;
-        padding-left: 72px;
-        position: absolute;
-        top: 18px;
-      }
-
-      .author {
-        text-align: center;
-        margin-bottom: 20px;
+        border-bottom: 1px solid #EEEEEE;
+        height: 60px;
 
         a {
-          font-weight: bold;
-          text-decoration: none;
-          text-transform: uppercase;
-          color: #070707;
-          border-bottom: solid 1px #bbb;
+            text-decoration: none;
         }
-      }
 
-      ul.nav {
-        list-style: none;
-        margin: 0px;
-        padding: 0px 0px;
-        padding-bottom: 20px;
-        padding-left: 20px;
+        header {
+            @include span-columns(4);
+            margin-top: 1px;
 
-        li {
-          line-height: 2;
-          text-transform: uppercase;
-          font-size: smaller;
+            h1 {
+                font-family: "Lato", $header-font-family;
+                font-weight: 400;
+                font-size: 18px;
+            }
         }
-      }
+
+        nav {
+            @include span-columns(4 omega);
+            text-align: right;
+        }
     }
 
-    #attributes {
-      width: grid-width(3);
-      margin-top: 20px;
-      padding-bottom: 20px;
-      text-align: center;
+    #page {
+        @include span-columns(8);
 
-      a {
-        padding: 10px;
-      }
+        #post {
+            header {
+                h1 {
+                    text-align: center;
+                    a {
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .metadata {
+                text-align: center;
+                color: #a7a7a7;
+            }
+
+            hr {
+                width: 80%;
+                border: none;
+                border-bottom: solid 1px #EEE;
+                margin-bottom: 10px;
+            }
+        }
     }
 
-    #license {
-      position: fixed;
-      bottom: 20px;
-      margin-left: 140px;
 
-      a {
-        img {
-          opacity: 0.2;
-        }
-
-        &:hover img {
-          opacity: 0.8;
-        }
-      }
-    }
-  }
 }
+

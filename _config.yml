@@ -1,23 +1,31 @@
+safe: true
 lsi: false
 paginate: 5
 permalink: /:year/:month/:title/
 markdown: rdiscount
 pygments: true
+
+name: subosito
 title: subosito
 url: http://subosito.com
 feed: http://feeds.feedburner.com/subosito
-email: subosito@gmail.com
+
 author: Alif Rachmawadi
 username: subosito
+email: subosito@gmail.com
+
 accounts:
-  twitter: https://twitter.com/#!/subosito
-  github: https://github.com/subosito
-  coderwall: https://coderwall.com/subosito
-  pinboard: https://pinboard.in/u:subosito/
-  stackoverflow: http://stackoverflow.com/users/94947/subosito
-  google: https://plus.google.com/107350708236214972935
+    twitter: https://twitter.com/#!/subosito
+    github: https://github.com/subosito
+    coderwall: https://coderwall.com/subosito
+    pinboard: https://pinboard.in/u:subosito/
+    stackoverflow: http://stackoverflow.com/users/94947/subosito
+    google: https://plus.google.com/107350708236214972935
+
 exclude:
-  - .gitignore
-  - README.md
-  - Gemfile
-  - Gemfile.lock
+    - .gitignore
+    - README.markdown
+    - Gemfile
+    - Gemfile.lock
+    - todo.txt
+

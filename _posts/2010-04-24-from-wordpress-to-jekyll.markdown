@@ -24,7 +24,7 @@ My personal technical point of views, Wordpress has limitations on how to manage
 
 That's my personal thoughts. As I said, that's just limitations not _drawbacks_ ;). I love and still using Wordpress for my other blogs.
 
-### What is Jekyll?
+### <span id="what-is-jekyll">What is Jekyll?</span>
 
 When I was learning Ruby, I found a nice idea, what if my blog is a simple as collection of HTML pages. Then a [Ruby Gem](http://rubygems.org/) comes to my mind, it called Jekyll from [Mojombo](http://wiki.github.com/mojombo). [According to their explanation](http://wiki.github.com/mojombo/jekyll), Jekyll is a blog aware, static pages generator. It uses [liquid](http://www.liquidmarkup.org/), as template, parse textile, mardown or plain HTML as posts. Benefits of using Jekyll is there is no database and no specific language on the server required. No pain, no hassle.
 
