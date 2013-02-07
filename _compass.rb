@@ -1,7 +1,6 @@
 # compass plugins
-require 'susy'
 require 'compass-normalize'
-require 'compass-recipes'
+require 'susy'
 
 http_path = "/"
 css_dir = "css"

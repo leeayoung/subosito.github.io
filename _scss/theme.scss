@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+// compass
+@import "compass/utilities/lists/inline-block-list";
+@import "compass/typography/links/link-colors";
+
+// normalize
+@import "normalize";
+
+// susy
+@import "susy";
+$total-columns: 8;
+
+// syntax
+@import "_syntax";
+
+// fonts
+@import "_font-awesome";
+@import url("//fonts.googleapis.com/css?family=Source Sans Pro:400");
+@import url("//fonts.googleapis.com/css?family=PT Sans:400");
+
+$base-font-family: 'PT Sans', 'Helvetica Neue', HelveticaNeue, Helvetica, sans-serif;
+$header-font-family: 'Source Sans Pro', $base-font-family;
+$code-font-family: Inconsolata, Monospace, "Courier New";
+
+// colors
+$selection-color: #ffffcc;
+$text-color: #333;
+
+body {
+  font-family: $base-font-family;
+  background: #fff;
+  color: $text-color;
+}
+
+a {
+  @include link-colors(#d92525, #ff8000, #ff2b2b, #280606, #280606);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $header-font-family;
+}
+
+pre {
+  white-space: pre;
+  word-wrap: normal;
+}
+
+code {
+  font-family: $code-font-family;
+  font-size: 16px;
+}
+
+#stripe {
+  border-bottom: solid 1px #ddd;
+  background: url('/img/patterns/billie_holiday.png') repeat;
+
+  .wrapper {
+    @include container;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    @include inline-block-list;
+  }
+
+  .brand {
+    @include span-columns(3);
+
+    h1 {
+      font-weight: normal;
+      font-size: 30px;
+      padding: 0px;
+      margin: 0px;
+      margin-top: 4px;
+    }
+
+    span {
+      color: #a7a7a7;
+    }
+  }
+
+  .social {
+    @include span-columns(5 omega);
+
+    a {
+      text-decoration: none;
+      font-size: 30px;
+      color: $text-color;
+    }
+
+    ul {
+      float: right;
+    }
+
+    li {
+      border-right: solid 1px #ddd;
+      padding: 4px 7px;
+
+      &:last-child {
+      }
+    }
+
+    .twitter a:hover {
+      color: #0087b2;
+    }
+
+    .github a:hover {
+      color: #3382c0;
+    }
+
+    .google a:hover {
+      color: #dc422b;
+    }
+
+    .google a:hover {
+      color: #dc422b;
+    }
+
+    .rss a:hover {
+      color: #fb5303;
+    }
+
+    .about a:hover {
+      color: #62e200;
+    }
+  }
+}
+
+#page {
+  @include container;
+  background-color: #fff;
+
+  header {
+    text-align: center;
+  }
+}
+
+// general
+.current {
+  font-weight: bold;
+}
+
+.right {
+  float: right;
+}
+
+.small {
+  font-size: smaller;
+}
+
+::selection {
+  background: $selection-color;
+}
+
+::-moz-selection {
+  background: $selection-color;
+}
+
+.separator {
+  width: 80%;
+  border: none;
+  border-bottom: solid 1px #eee;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
