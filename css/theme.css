@@ -1966,6 +1966,13 @@ code {
 #stripe .social .about a:hover {
   color: #62e200;
 }
+#stripe .social .mail a:hover {
+  color: #49aec0;
+}
+#stripe .social .mail a {
+  margin-top: -5px;
+  display: block;
+}
 
 #page {
   *zoom: 1;

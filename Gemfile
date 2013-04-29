@@ -1,4 +1,4 @@
-source :rubygems
+source 'https://rubygems.org'
 
 # match github build server version
 # https://help.github.com/articles/using-jekyll-with-pages

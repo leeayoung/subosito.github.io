@@ -21,6 +21,7 @@ accounts:
     pinboard: https://pinboard.in/u:subosito/
     stackoverflow: http://stackoverflow.com/users/94947/subosito
     google: https://plus.google.com/107350708236214972935
+    aboutme: http://about.me/subosito
 
 exclude:
     - .gitignore

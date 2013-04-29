@@ -2,20 +2,20 @@
 layout: layout
 ---
 <article id="post">
-    <header>
-        <h1><a href="{{ page.url }}">{{ page.title}}</a></h1>
-        <time pubdate datetime="{{ page.date | date_to_xmlschema }}"></time>
-    </header>
+  <header>
+    <h1><a href="{{ page.url }}">{{ page.title}}</a></h1>
+    <time pubdate datetime="{{ page.date | date_to_xmlschema }}"></time>
+  </header>
 
-    <section class="content">
-        {{ content }}
-    </section>
+  <section class="content">
+    {{ content }}
+  </section>
 
-    <hr class="separator">
+  <hr class="separator">
 
-    <footer id="disqus_thread">
-        {% unless site.server %}
-            {% include disqus.html %}
-        {% endunless %}
-    </footer>
+  <footer id="disqus_thread">
+    {% unless site.server %}
+      {% include disqus.html %}
+    {% endunless %}
+  </footer>
 </article>

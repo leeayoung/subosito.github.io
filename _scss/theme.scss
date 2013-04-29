@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 // compass
-@import "compass/utilities/lists/inline-block-list";
+@import "compass/typography/lists/inline-block-list";
 @import "compass/typography/links/link-colors";
 
 // normalize
@@ -125,6 +125,15 @@ code {
 
     .about a:hover {
       color: #62e200;
+    }
+
+    .mail a:hover {
+      color: #49aec0;
+    }
+
+    .mail a {
+      margin-top: -5px;
+      display: block;
     }
   }
 }
