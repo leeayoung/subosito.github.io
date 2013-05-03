@@ -13,9 +13,9 @@ layout: layout
 
   <hr class="separator">
 
+  {% unless site.server %}
   <footer id="disqus_thread">
-    {% unless site.server %}
-      {% include disqus.html %}
-    {% endunless %}
+    {% include disqus.html %}
   </footer>
+  {% endunless %}
 </article>

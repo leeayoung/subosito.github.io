@@ -41,6 +41,10 @@ h1, h2, h3, h4, h5 {
   font-family: $header-font-family;
 }
 
+h2 {
+  border-bottom: 1px solid #ccc;
+}
+
 pre {
   white-space: pre;
   word-wrap: normal;
@@ -49,6 +53,12 @@ pre {
 code {
   font-family: $code-font-family;
   font-size: 16px;
+}
+
+blockquote {
+  border-left: 4px solid #ddd;
+  padding: 0 15px;
+  color: #777;
 }
 
 #stripe {

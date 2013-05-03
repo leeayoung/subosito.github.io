@@ -10,7 +10,7 @@ Wait, wait.. relax guys. This is just a matter of flavor, nothing else, I will t
 
 Before I dig the material, I want to say "Hello!" to everyone outside there, I miss you so much. It has been 6 months since my last update, and, wow, that a loooong time ago. Nevermind, glad to see you here again :).
 
-### Some Thoughts Behind Migration
+## Some Thoughts Behind Migration
 
 I have been Wordpress fan since a long time ago, I have created some plugins and themes based on it. And, I think I wouldn't never leave wordpress for any reasons. The idea of moving this blog from Wordpress to Jekyll, actually, because of my addiction to [Ruby](http://www.ruby-lang.org) and [Git](http://git-scm.com), a marvelous combinations.
 
@@ -24,11 +24,11 @@ My personal technical point of views, Wordpress has limitations on how to manage
 
 That's my personal thoughts. As I said, that's just limitations not _drawbacks_ ;). I love and still using Wordpress for my other blogs.
 
-### <span id="what-is-jekyll">What is Jekyll?</span>
+## What is Jekyll?
 
 When I was learning Ruby, I found a nice idea, what if my blog is a simple as collection of HTML pages. Then a [Ruby Gem](http://rubygems.org/) comes to my mind, it called Jekyll from [Mojombo](http://wiki.github.com/mojombo). [According to their explanation](http://wiki.github.com/mojombo/jekyll), Jekyll is a blog aware, static pages generator. It uses [liquid](http://www.liquidmarkup.org/), as template, parse textile, mardown or plain HTML as posts. Benefits of using Jekyll is there is no database and no specific language on the server required. No pain, no hassle.
 
-#### Installation
+### Installation
 
 Ok, now you are understand what Jekyll is. Our next step is installation. As other ruby gems, installation of Jekyll is fairly simple.
 
@@ -126,7 +126,7 @@ layout: post # you can define different layout  here
 
 *Remember* All files that has YAML front matter will always be processed by Jekyll.
 
-### Let's Work!
+## Let's Work!
 
 So you are ready to build your website? Great, now let's create a basic layout. Create new file on `_layouts` directory, for example, I called `master.html`, this file will be our site wide template. Here's the code:
 
@@ -181,18 +181,17 @@ layout: master
 After you created all files above, copy all of imported posts files above (`_tmp/_posts`), into `_posts`. Then on the console, just type:
 
 {% highlight bash %}
-jekyll --server --auto
+$ jekyll --server --auto
 {% endhighlight %}
-
 
 Now, open your browser and point to [http://localhost:4000/](http://localhost:4000/), If you see all of your existing wordpress posts, *Congratulations!* your migration stage almost completed ;)
 
-### Let's World See It
+## Let's World See It
 
 All static pages generated, now let's copy it to the server, and show the world. Since all of generated pages are plain HTML files, you can upload it directly using *FTP* with your [favorite FTP client](http://fireftp.mozdev.org/). Even better, I suggest you to using awesome tool like [rsync](http://samba.anu.edu.au/rsync/). By issue single command, your files will be transfered automatically to your server.
 
 {% highlight bash %}
-rsync -avz /path/to/_site username@remotehost:path/to/blog
+$ rsync -avz /path/to/_site username@remotehost:path/to/blog
 {% endhighlight %}
 
 *Congratulations, migration Completed*. Your site now live!. In the next few days, I will cover some tips and trick to make jekyll based pages more powerfull. For now you can take a look [source codes of this site](http://github.com/subosito/subosito.github.com) on the Github to get full overview about Jekyll usage for this blog.
