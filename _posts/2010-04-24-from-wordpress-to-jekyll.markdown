@@ -2,6 +2,7 @@
 title: From Wordpress to Jekyll
 layout: post
 category: ruby
+excerpt: Migration from Wordpress to "hacker way to blog" Jekyll. Illustrate step by step from exports data to deployment.
 ---
 
 _Hello?! Are you kidding to me? What's wrong with [Wordpress](http://www.wordpress.org/) ? Why did you need to migrate from Wordpress to ehm,, what do you said before, [Jekyll](http://github.com/mojombo/jekyll) ? what kind of animal is it?_

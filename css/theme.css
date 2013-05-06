@@ -1868,6 +1868,10 @@ h2 {
   border-bottom: 1px solid #cccccc;
 }
 
+h3 a {
+  text-decoration: none;
+}
+
 pre {
   white-space: pre;
   word-wrap: normal;
@@ -2029,4 +2033,11 @@ blockquote {
   border-bottom: solid 1px #eeeeee;
   margin-bottom: 40px;
   margin-top: 40px;
+}
+
+.entry-separator {
+  border: none;
+  border-bottom: solid 1px #eeeeee;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }

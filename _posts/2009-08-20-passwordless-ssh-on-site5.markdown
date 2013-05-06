@@ -2,6 +2,7 @@
 title: Passwordless SSH on Site5
 layout: post
 category: recipes
+excerpt: Simple guidance to enable passwordless SSH connection on the remote server.
 ---
 
 ![OpenSSH](/img/logo/openssh.gif)

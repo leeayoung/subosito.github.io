@@ -12,22 +12,11 @@ layout: layout
     </header>
 
     <section class="content">
-        <ul>
-            {% for post in site.posts %}
-                <li>
-                    <em>
-                        <time pubdate datetime="{{ post.date | date_to_xmlschema }}">
-                            <span class="year">{{ post.date | date: '%Y' }}</span>
-                            <span>/</span>
-                            <span class="month">{{ post.date | date: '%m' }}</span>
-                            <span>/</span>
-                            <span class="day">{{ post.date | date: '%d' }}</span>
-                        </time>
-                    </em>
-                    <br>
-                    <a href="{{ post.url }}">{{ post.title}}</a>
-                </li>
-            {% endfor %}
-        </ul>
+      {% for post in site.posts %}
+      <h3><a href="{{ post.url }}">{{ post.title}}</a></h3>
+      <em>{{ post.date | date: "%B %d, %Y" }}</em>
+      <p>{{ post.excerpt }}</p>
+      <hr class="entry-separator">
+      {% endfor %}
     </section>
 </section>

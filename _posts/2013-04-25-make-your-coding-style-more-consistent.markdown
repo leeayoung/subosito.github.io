@@ -2,6 +2,7 @@
 title: Make Your Coding Style More Consistent
 layout: post
 category: convention
+excerpt: Learn how to produce more consistent codes across developers by utilizing small and readable configuration which works across editors.
 ---
 
 ## Overview

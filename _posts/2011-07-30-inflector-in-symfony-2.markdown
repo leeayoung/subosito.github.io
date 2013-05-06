@@ -2,6 +2,7 @@
 title: Inflector in Symfony 2
 layout: post
 category: symfony
+excerpt: Bring Ruby on Rails inflector goodness to Symfony 2 framework.
 ---
 
 On [Ruby on Rails](http://rubyonrails.org), you have some inflector methods directly on `String` or `Integer` class. You can easily do:

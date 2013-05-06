@@ -2,6 +2,7 @@
 title: Securing SSH, Preventing Nightmare
 layout: post
 category: ssh
+excerpt: Configure SSH server to create secure server which makes attackers go away.
 ---
 
 <img src="/img/ssh.png" alt="ssh" class="right">
