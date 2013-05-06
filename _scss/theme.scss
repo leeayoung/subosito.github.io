@@ -21,7 +21,7 @@ $total-columns: 8;
 
 $base-font-family: 'PT Sans', 'Helvetica Neue', HelveticaNeue, Helvetica, sans-serif;
 $header-font-family: 'Source Sans Pro', $base-font-family;
-$code-font-family: Inconsolata, Monospace, "Courier New";
+$code-font-family: Consolas, "Liberation Mono", Courier, monospace;
 
 // colors
 $selection-color: #ffffcc;
@@ -54,7 +54,7 @@ pre {
   word-wrap: normal;
 }
 
-code {
+pre, code {
   font-family: $code-font-family;
   font-size: 16px;
 }
@@ -190,5 +190,12 @@ blockquote {
   border-bottom: solid 1px #eee;
   margin-bottom: 20px;
   margin-top: 20px;
+}
+
+.highlight {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  overflow: auto;
+  padding: 4px 10px;
 }
 

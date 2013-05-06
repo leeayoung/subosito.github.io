@@ -2,7 +2,7 @@ safe: true
 lsi: false
 paginate: 5
 permalink: /:year/:month/:title/
-markdown: rdiscount
+markdown: redcarpet
 pygments: true
 
 name: subosito

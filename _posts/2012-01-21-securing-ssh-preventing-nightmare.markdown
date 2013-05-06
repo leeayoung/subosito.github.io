@@ -46,7 +46,7 @@ PermitRootLogin no
 I always create user without password for my server which I think there is no chance for brute for attack or any other similar attacks (by guessing username and password pair). Here's my command when create user:
 
 {% highlight bash %}
-adduser --home /home/rico --shell /bin/bash --disabled-password rico
+% adduser --home /home/rico --shell /bin/bash --disabled-password rico
 {% endhighlight %}
 
 Since the user have no password, so I disable password authentication for SSH which lead more secure server:

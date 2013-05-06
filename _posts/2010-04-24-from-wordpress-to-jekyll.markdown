@@ -37,7 +37,7 @@ Make sure you have Ruby and Rubygem installed on your local computer. You can re
 
 
 {% highlight bash %}
-gem install jekyll
+$ gem install jekyll
 {% endhighlight %}
 
 Jekyll requires other gems like `liquid`, `maruku`, `open4`, `directory_watcher`, `classifier`, `maruku` and `RedCloth`. Don't worry, `gem install` command above will install other gems as well.
@@ -195,7 +195,7 @@ All static pages generated, now let's copy it to the server, and show the world.
 $ rsync -avz /path/to/_site username@remotehost:path/to/blog
 {% endhighlight %}
 
-*Congratulations, migration Completed*. Your site now live!. In the next few days, I will cover some tips and trick to make jekyll based pages more powerfull. For now you can take a look [source codes of this site](http://github.com/subosito/subosito.github.com) on the Github to get full overview about Jekyll usage for this blog.
+*Congratulations, migration Completed*. Your site now live!. In the next few days, I will cover some tips and trick to make jekyll based pages more powerfull. For now you can take a look [source codes of this site](http://github.com/subosito/subosito.github.io) on the Github to get full overview about Jekyll usage for this blog.
 
 If you have any questions or suggestions, don't be hesitate to put it on comment form below. *See ya! :D*
 
