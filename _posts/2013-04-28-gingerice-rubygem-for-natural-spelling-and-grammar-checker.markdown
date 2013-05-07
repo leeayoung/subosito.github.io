@@ -1,6 +1,5 @@
 ---
 title: "Gingerice: A rubygem for natural spelling and grammar checker"
-date: 2013-04-28 07:59:36
 layout: post
 category: opensource
 excerpt: Overview and usage of Gingerice, a rubygem for correcting spelling and grammar mistakes based on the context of complete sentences.
