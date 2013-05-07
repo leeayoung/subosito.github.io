@@ -2133,3 +2133,7 @@ blockquote {
   overflow: auto;
   padding: 4px 10px;
 }
+
+.pubdate {
+  color: #999999;
+}

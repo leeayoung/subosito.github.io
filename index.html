@@ -13,8 +13,8 @@ layout: layout
 
     <section class="content">
       {% for post in site.posts %}
+      <span class="pubdate">{{ post.date | date: "%B %d, %Y" }}</span>
       <h3><a href="{{ post.url }}">{{ post.title}}</a></h3>
-      <em>{{ post.date | date: "%B %d, %Y" }}</em>
       <p>{{ post.excerpt }}</p>
       <hr class="entry-separator">
       {% endfor %}
