@@ -30,4 +30,6 @@ exclude:
     - Gemfile
     - Gemfile.lock
     - todo.txt
+    - Vendorfile
+    - Procfile
 
