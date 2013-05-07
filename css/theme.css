@@ -2132,6 +2132,7 @@ blockquote {
   border: 1px solid #ddd;
   overflow: auto;
   padding: 4px 10px;
+  margin-top: 6px;
 }
 
 .pubdate {
