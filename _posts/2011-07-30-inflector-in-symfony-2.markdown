@@ -1,7 +1,6 @@
 ---
 title: Inflector in Symfony 2
 layout: post
-category: symfony
 excerpt: Bring Ruby on Rails inflector goodness to Symfony 2 framework.
 ---
 
@@ -16,8 +15,6 @@ On [Ruby on Rails](http://rubyonrails.org), you have some inflector methods dire
 > 'something text to read'.humanize # "Something text to read"
 > 10.ordinalize # "10th"
 {% endhighlight %}
-
-<img src="/img/logo/symfony.png" alt="Symfony 2" class="right">
 
 On [Symfony 2](http://symfony.com), to behave like that is a little bit tricky, we need to create custom class and add it as DIC so we can use it everywhere on our application.
 
@@ -413,3 +410,4 @@ $inflector->ordinalize(10); # 10th
 {% endhighlight %}
 
 You can read more about methods on `Inflector.php` above to know more methods and samples. Hopefully, symfony2 will support inflector like this out of the box like [Akelos Framework](http://www.akelos.org) which this source code initially come from.
+

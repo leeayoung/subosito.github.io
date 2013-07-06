@@ -1,8 +1,0 @@
-from 'git://github.com/FortAwesome/Font-Awesome.git', :tag => 'v3.0.2' do
-  folder 'fonts', 'font'
-  file '_scss/_font-awesome.scss', 'sass/font-awesome.scss' do |path|
-    rewrite(path) do |content|
-      content.gsub! "../font", "../fonts"
-    end
-  end
-end

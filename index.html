@@ -1,22 +1,38 @@
 ---
 title: Alif Rachmawadi
-layout: layout
+layout: default
 ---
 
-<section id="posts">
-    <header>
-        <h1>
-            <span class="icon" data-icon=""></span>
-            <span>Recent Posts</span>
-        </h1>
-    </header>
+<div id="home">
+  <section class="quotes">
+    <blockquote>
+      <span>Love to hard work to create maintainable and scalable application while keeping to deliver it fast and (mostly) bug free.</span><br>
+      <small>(drop me <a href="mailto:subosito@gmail.com">a line</a> if you need that one)</small>
+    </blockquote>
+  </section>
 
-    <section class="content">
-      {% for post in site.posts %}
-      <span class="pubdate">{{ post.date | date: "%B %d, %Y" }}</span>
-      <h3><a href="{{ post.url }}">{{ post.title}}</a></h3>
-      <p>{{ post.excerpt }}</p>
-      <hr class="entry-separator">
-      {% endfor %}
-    </section>
-</section>
+  <section class="avatar">
+    <img src="/assets/img/avatar.png" alt="subosito avatar">
+  </section>
+
+  <section class="blog">
+    <h3>#blog</h3>
+    <ul>
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <p><small>{{ post.date | date: "%B %d, %Y"  }}</small> - {{ post.excerpt }}</p>
+      </li>
+    {% endfor %}
+    </ul>
+  </section>
+
+  <section class="notes">
+    <h3>#notes</h3>
+    <ul>
+    {% for note in site.notes %}
+      <li><a href="{{ note.url }}">{{ note.title }}</a></li>
+    {% endfor %}
+    </ul>
+  </section>
+</div>

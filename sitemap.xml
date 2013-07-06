@@ -13,13 +13,17 @@ layout: nil
     {% endif %}
   </url>
   {% endfor %}
+
+  {% for note in site.notes %}
+  <url>
+    <loc>{{ site.url }}{{ note.url }}</loc>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+  </url>
+  {% endfor %}
+
   <url>
     <loc>{{ site.url }}</loc>
     <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
     <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>{{ site.url }}/about/</loc>
-    <lastmod>2011-06-16</lastmod>
   </url>
 </urlset>

@@ -1,0 +1,299 @@
+@charset "utf-8";
+
+// compass
+@import "compass/typography/lists/inline-block-list";
+@import "compass/typography/links/link-colors";
+
+// normalize
+@import "normalize";
+
+// susy
+@import "susy";
+$total-columns: 8;
+
+// $column-width: 4em;
+// $gutter-width: 1em;
+// $grid-padding: $gutter-width;
+
+// pygments theme
+@import "syntax";
+
+// fonts
+@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro|Domine");
+@import url("//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css");
+
+$base-font-family: Domine, 'Helvetica Neue', Helvetica, sans-serif;
+$header-font-family: 'Source Sans Pro', $base-font-family;
+$code-font-family: Consolas, "Liberation Mono", Courier, monospace;
+
+// colors
+$selection-color: #ffffcc;
+$text-color: #333;
+
+body {
+  font-family: $base-font-family;
+  background: #fff;
+  color: $text-color;
+}
+
+p {
+  line-height: 1.6em;
+}
+
+a {
+  @include link-colors(#d92525, #ff8000, #ff2b2b, #790000, #280606);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $header-font-family;
+}
+
+h2 {
+  border-bottom: 1px solid #ccc;
+  line-height: 2.5em;
+}
+
+h1 a, h3 a {
+  text-decoration: none;
+}
+
+pre {
+  white-space: pre;
+  word-wrap: normal;
+}
+
+pre, code {
+  font-family: $code-font-family;
+  font-size: 14px;
+}
+
+blockquote {
+  border-left: 4px solid #ddd;
+  padding: 0 15px;
+  color: #777;
+}
+
+.stripe {
+  border-top: solid 1px #fff;
+  border-bottom: solid 1px #ddd;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  opacity: 0.9;
+
+  .wrapper {
+    @include container;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    @include inline-block-list;
+  }
+
+  .brand {
+    @include span-columns(3);
+
+    h1 {
+      font-weight: normal;
+      font-size: 30px;
+      padding: 0px;
+      margin: 0px;
+      margin-top: 2px;
+    }
+
+    span {
+      color: #a7a7a7;
+    }
+  }
+
+  .social {
+    @include span-columns(5 omega);
+
+    a {
+      font-size: 34px;
+      color: $text-color;
+    }
+
+    ul {
+      float: right;
+    }
+
+    li {
+      padding: 0px 7px 2px 7px;
+    }
+
+    .twitter a:hover {
+      color: #33ccff;
+    }
+
+    .github a:hover {
+      color: #3382c0;
+    }
+
+    .google a:hover {
+      color: #c63d2d;
+    }
+
+    .linkedin a:hover {
+      color: #4875b3;
+    }
+
+    .mail {
+      padding-right: 0px;
+    }
+
+    .mail a:hover {
+      color: #49aec0;
+    }
+  }
+}
+
+.contents {
+  @include container;
+  background-color: #fff;
+  margin-top: 60px;
+
+  header {
+    text-align: center;
+  }
+}
+
+// general
+.current {
+  font-weight: bold;
+}
+
+.right {
+  float: right;
+}
+
+.small {
+  font-size: smaller;
+}
+
+::-moz-selection {
+  background: $selection-color;
+}
+
+::selection {
+  background: $selection-color;
+}
+
+hr {
+  width: 80%;
+  border: none;
+  border-bottom: solid 1px #eee;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.entry-separator {
+  border: none;
+  border-bottom: solid 1px #eee;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+div.highlight {
+  overflow: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 6px;
+}
+
+.gist-no-bar {
+  .gist .gist-file .gist-meta {
+    display: none;
+  }
+}
+
+#home {
+  .avatar {
+    @include span-columns(3 omega);
+    text-align: center;
+
+    img {
+      border: solid 1px #CCC;
+      padding: 8px;
+    }
+  }
+
+  .quotes {
+    @include span-columns(5);
+
+    blockquote {
+      font-family: Georgia, serif;
+      font-size: 20px;
+      font-style: italic;
+      border-left: none;
+      padding: 0px;
+      color: #777;
+      text-align: center;
+      margin: 0px;
+      margin-top: 50px;
+      margin-bottom: 80px;
+    }
+  }
+
+  .notes {
+    @include span-columns(3 omega);
+  }
+
+  .blog {
+    @include span-columns(5);
+  }
+
+  .notes h3, .blog h3 {
+    text-align: center;
+    border-bottom: solid 1px #ddd;
+  }
+}
+
+.content {
+  time {
+    text-align: center;
+    display: block;
+  }
+}
+
+kbd {
+  padding: 0.5em 0.6em 0.1em 0.6em;
+  border: 1px solid #ccc;
+  font-size: 11px;
+  font-family: $code-font-family;
+  background-color: #f7f7f7;
+  color: #333;
+  -moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #fff inset;
+  -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #fff inset;
+  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #fff inset;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 0 0.1em;
+  text-shadow: 0 1px 0 #fff;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+h2 a.anchor {
+  font-size: 16px;
+  visibility: hidden;
+  padding: 0px;
+  padding-right: 8px;
+  margin-left: -26px;
+  text-decoration: none;
+}
+
+h2:hover a.anchor {
+  visibility: visible;
+}
+
+div.highlight {
+  color: #f8f8f2;
+  .lineno { color: #bbbbbb }
+}

@@ -1,9 +1,12 @@
 safe: true
 lsi: false
-paginate: 5
-permalink: /:year/:month/:title/
-markdown: redcarpet
 pygments: true
+permalink: /:year/:month/:title/
+relative_permalinks: false
+
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 
 name: subosito
 title: subosito
@@ -15,21 +18,49 @@ username: subosito
 email: subosito@gmail.com
 
 accounts:
-    twitter: https://twitter.com/#!/subosito
-    github: https://github.com/subosito
-    linkedin: http://id.linkedin.com/in/subosito/
-    coderwall: https://coderwall.com/subosito
-    pinboard: https://pinboard.in/u:subosito/
-    stackoverflow: http://stackoverflow.com/users/94947/subosito
-    google: https://plus.google.com/107350708236214972935
-    aboutme: http://about.me/subosito
+  twitter: https://twitter.com/subosito
+  github: https://github.com/subosito
+  linkedin: http://id.linkedin.com/in/subosito/
+  coderwall: https://coderwall.com/subosito
+  pinboard: https://pinboard.in/u:subosito/
+  stackoverflow: http://stackoverflow.com/users/94947/subosito
+  google: https://plus.google.com/107350708236214972935
+  aboutme: http://about.me/subosito
+
+referals:
+  digitalocean: https://www.digitalocean.com/?refcode=549f5da47c8f
 
 exclude:
-    - .gitignore
-    - README.markdown
-    - Gemfile
-    - Gemfile.lock
-    - todo.txt
-    - Vendorfile
-    - Procfile
+  - .gitignore
+  - README.markdown
+  - compass.rb
+  - Gemfile
+  - Gemfile.lock
+  - Procfile
+
+notes:
+  - title: Ruby
+    url: /notes/ruby/
+  - title: Bundler
+    url: /notes/bundler/
+  - title: Ruby on Rails
+    url: /notes/rails/
+  - title: Goliath
+    url: /notes/goliath/
+  - title: Jekyll
+    url: /notes/jekyll/
+  - title: GitHub Gist
+    url: /notes/gist/
+  - title: PostgreSQL
+    url: /notes/postgresql/
+  - title: Vim
+    url: /notes/vim/
+  - title: SSH
+    url: /notes/ssh/
+  - title: Arch Linux
+    url: /notes/arch/
+  - title: Bootstrap
+    url: /notes/bootstrap/
+  - title: MongoDB
+    url: /notes/mongodb/
 

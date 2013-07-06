@@ -1,2 +1,2 @@
-jekyll: bundle exec jekyll serve
-compass: bundle exec compass watch -c _compass.rb
+jekyll: bundle exec jekyll serve --watch
+compass: bundle exec compass watch -c compass.rb
