@@ -51,8 +51,6 @@
       {{ content }}
     </section>
 
-    {% unless site.host %}
-      {% include analytics.html %}
-    {% endunless %}
+    {% include analytics.html %}
   </body>
 </html>

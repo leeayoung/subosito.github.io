@@ -6,16 +6,6 @@ permalink: /notes/jekyll/
 
 [Jekyll](http://jekyllrb.com/) is a simple, blog-aware, static site generator from dynamic components like Markdown and Liquid.
 
-## Detecting Jekyll running mode
-
-If you wanto to include some component like analytics or comments, it should be better if you check wether Jekyll running as `server` or not. This approach makes Jekyll to skip unnecessary component during local development.
-
-{% highlight text %}
-{{ "{% unless site.host " }}%}
-  {{ "{{ include analytics.html " }}}}
-{{ "{% endunless " }}%}
-{% endhighlight %}
-
 ## Writing liquid tag within jekyll pages
 
 To write liquid tag within jekyll pages you can write your liquid syntax like:
