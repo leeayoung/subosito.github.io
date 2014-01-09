@@ -80,3 +80,19 @@ Now the content of `foo.txt` will be available on main clipboard.
 
 Since you're using parcellite you can press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>h</kbd>, and parcellite pop-up will be shown.
 
+## Automatically suspend when battery is low
+
+You can automatically suspend your system when your battery is draining. You can put a rule on `/etc/udevd/rules.d/lowbat.rules`:
+
+```bash
+SUBSYSTEM=="power_supply", ATTR{status}=="Discharging", ATTR{capacity}=="2", RUN+="/usr/bin/systemctl suspend"
+```
+
+## Short useful commands
+
+### Burn an iso to a DVD
+
+```bash
+$ growisofs -dvd-compat -Z /dev/sr0=/path/to/file.iso
+```
+
