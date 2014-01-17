@@ -4,6 +4,14 @@
     <meta charset="utf-8">
     <meta name="author" content="{{ site.author }}">
     <title>{{ page.title }} | {{ site.title }}</title>
+    <meta property="og:image" content="{{ site.url }}/assets/img/avatar.png">
+    <meta property="og:title" content="{{ page.title}}">
+    <meta property="og:url" content="{{ page.url}}">
+    <meta property="og:site_name" content="{{ site.author }} Blog">
+    <meta property="og:type" content="blog">
+    {% if page.excerpt %}
+    <meta property="og:description" content="{{ page.excerpt }}">
+    {% endif %}
     <link rel="alternate" type="application/atom+xml" href="{{ site.feed }}">
     <link rel="author" href="mailto:{{ site.email"}}">
     <link rel="shortcut icon" href="/favicon.ico">
