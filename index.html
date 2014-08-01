@@ -4,18 +4,7 @@ layout: default
 ---
 
 <div id="home">
-  <section class="quotes">
-    <blockquote>
-      <span>Love to hard work to create maintainable and scalable application while keeping to deliver it fast and (mostly) bug free.</span><br>
-      <small>(drop me <a href="mailto:subosito@gmail.com">a line</a> if you need that one)</small>
-    </blockquote>
-  </section>
-
-  <section class="avatar">
-    <img src="/assets/img/avatar.png" alt="subosito avatar">
-  </section>
-
-  <section class="blog">
+  <section class="content">
     <h3>#blog</h3>
     <ul>
     {% for post in site.posts %}
@@ -23,15 +12,6 @@ layout: default
         <a href="{{ post.url }}">{{ post.title }}</a>
         <p><small>{{ post.date | date: "%B %d, %Y"  }}</small> - {{ post.excerpt }}</p>
       </li>
-    {% endfor %}
-    </ul>
-  </section>
-
-  <section class="notes">
-    <h3>#notes</h3>
-    <ul>
-    {% for note in site.notes %}
-      <li><a href="{{ note.url }}">{{ note.title }}</a></li>
     {% endfor %}
     </ul>
   </section>

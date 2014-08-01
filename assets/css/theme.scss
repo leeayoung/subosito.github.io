@@ -1,0 +1,131 @@
+---
+---
+@charset "utf-8";
+
+@import "normalize";
+@import "susy";
+@import "syntax";
+
+$base-font-family: 'Merriweather', Helvetica, sans-serif;
+$header-font-family: 'Libre Baskerville', $base-font-family;
+$code-font-family: Consolas, "Liberation Mono", Courier, monospace;
+$selection-color: #ffffcc;
+$text-color: #333;
+
+body {
+  font-family: $base-font-family;
+  background: #fff;
+  color: $text-color;
+}
+
+p {
+  line-height: 1.6em;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $header-font-family;
+}
+
+h2 {
+  border-bottom: 1px solid #ccc;
+  line-height: 2.5em;
+}
+
+h1 a, h3 a {
+  text-decoration: none;
+}
+
+pre {
+  white-space: pre;
+  word-wrap: normal;
+}
+
+pre, code {
+  font-family: $code-font-family;
+  font-size: 14px;
+}
+
+blockquote {
+  border-left: 4px solid #ddd;
+  padding: 0 15px;
+  color: #777;
+}
+
+kbd {
+  padding: 0.5em 0.6em 0.1em 0.6em;
+  border: 1px solid #ccc;
+  font-size: 11px;
+  font-family: $code-font-family;
+  background-color: #f7f7f7;
+  color: #333;
+  -moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #fff inset;
+  -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #fff inset;
+  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #fff inset;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 0 0.1em;
+  text-shadow: 0 1px 0 #fff;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+div {
+  &.highlight {
+    color: #f8f8f2;
+    overflow: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 6px;
+
+    .lineno {
+      color: #bbb;
+    }
+  }
+}
+
+hr {
+  width: 80%;
+  border: none;
+  border-bottom: solid 1px #eee;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.current {
+  font-weight: bold;
+}
+
+.right {
+  float: right;
+}
+
+.small {
+  font-size: smaller;
+}
+
+::-moz-selection {
+  background: $selection-color;
+}
+
+::selection {
+  background: $selection-color;
+}
+
+.entry-separator {
+  border: none;
+  border-bottom: solid 1px #eee;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.gist-no-bar {
+  .gist .gist-file .gist-meta {
+    display: none;
+  }
+}
+
+.wrapper {
+  @include container(50%);
+}

@@ -28,7 +28,7 @@ Location: /notes/vim/
 
 As you can see, GitHub respond request with 302 (Found) instead of 200 (OK). This means each request need additional redirection. That's smell bad for your website SEO :(.
 
-### Solution
+## Solution
 
 Instead of using A record, you can use ALIAS record for your domain. What is ALIAS record? ALIAS record is simple record that enable to lookup the IP or the ALIAS value then returned that as the IP of your domain. Your user don't know or care how they got the IP address of your domain.
 
