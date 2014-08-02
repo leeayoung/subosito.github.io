@@ -2,8 +2,18 @@
 ---
 @charset "utf-8";
 
-@import "normalize";
-@import "susy";
+@import "bourbon/bourbon";
+@import "neat/neat-helpers";
+
+$column: 90px;
+$gutter: 30px;
+$grid-columns: 10;
+$max-width: em(1088);
+
+$tablet: new-breakpoint(max-width 768px 8);
+$mobile: new-breakpoint(max-width 480px 4);
+
+@import "neat/neat";
 @import "syntax";
 
 $base-font-family: 'Merriweather', Helvetica, sans-serif;
@@ -127,5 +137,10 @@ hr {
 }
 
 .wrapper {
-  @include container(50%);
+  @include outer-container;
+
+  #home, #page, #post {
+    @include span-columns(6 of 10);
+    @include shift(2);
+  }
 }

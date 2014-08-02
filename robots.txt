@@ -5,4 +5,5 @@ Sitemap: {{ site.data.info.url }}/sitemap.xml
 
 # rules
 User-agent: *
-Disallow: /img/
+Disallow: /assets/
+
