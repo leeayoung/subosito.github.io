@@ -3,7 +3,7 @@ title: Get the Real Visitor IP From Rackspace Load Balancer
 layout: post
 excerpt: By default Rackspace load balancer replace visitor IP with its private IP. Here's how to get the visitor IP back!
 redirect_from:
-  - /2014/01/get-the-real-visitor-ip-from-rackspace-load-balancer
+  - /2014/01/get-the-real-visitor-ip-from-rackspace-load-balancer/
 ---
 
 On my previous post, I show you about [the ability of Rackspace load balancer to redirect HTTP request to HTTPS one]({% post_url 2014-01-07-redirect-http-to-https-on-rackspace-load-balancer %}). One thing you might realized that the remote visitor IP that you get is only the private IP of your load balancer. If you have a load balancer that listen protocol HTTPS, you need to change it to listen HTTP (80).
