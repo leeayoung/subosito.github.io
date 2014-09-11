@@ -6,6 +6,7 @@ group :development do
   gem 'sass'
   gem 'bourbon'
   gem 'neat'
+  gem 'bitters'
   gem 'foreman'
 end
 
